@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeVidActivity">
+    <RelativeLayout
+        android:id="@+id/DestVideoView"
+        android:layout_width="700dp"
+        android:layout_height="393dp"
+        android:layout_margin="20dp">
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/DestVideo"/>
+        <MediaController
+            android:id="@+id/mediaController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/DestVideo"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/MapView"
+        android:layout_width="530dp"
+        android:layout_height="530dp"
+        android:layout_toRightOf="@id/DestVideoView"
+        android:layout_margin="20dp">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ChatBoxView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/DestVideoView">
+        <!--TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userQuesHeading"
+            style="@style/FieldTextStyle"/>
+
+        <TextView
+            android:id="@+id/UserSpeech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:background="@drawable/round_corner_active"
+            android:textColor="@color/white"/-->
+
+        <TextView
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:text="@string/botAnsHeading"
+            android:id="@+id/ChatHeading"
+            style="@style/FieldTextStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/BotAnswer"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="30dp"
+                    android:background="@drawable/round_corner_active"
+                    android:textColor="@color/white"/>
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/ChatBoxView"
+                android:layout_below="@id/DestinationView"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginTop="75dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MicInstructions"
+                    style="@style/NormalHeading"
+                    android:layout_gravity="center_horizontal"/>
+                <ImageButton
+                    android:id="@+id/RecordButton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/recordicon2"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

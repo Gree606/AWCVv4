@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignLanguage">
+    <RelativeLayout
+        android:id="@+id/DestVideoView"
+        android:layout_width="700dp"
+        android:layout_height="393dp"
+        android:layout_margin="20dp">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </androidx.camera.view.PreviewView>
+
+
+        <ImageButton
+            android:id="@+id/toggleFlash"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/round_flash_on_24"
+            android:visibility="visible"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/flipCamera"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:src="@drawable/round_flip_camera_android_24"
+            android:visibility="visible"
+            app:tint="#fff" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="188dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_corner_active"
+            android:textColor="@color/white"
+            android:text="Start" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/DestVideoView"
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <VideoView
+            android:id="@+id/DestVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <MediaController
+            android:id="@+id/mediaController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/DestVideo"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ChatBoxView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/DestVideoView">
+
+        <TextView
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:text="@string/botAnsHeading"
+            android:id="@+id/ChatHeading"
+            style="@style/FieldTextStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/BotAnswer"
+                    android:layout_width="700dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="30dp"
+                    android:background="@drawable/round_corner_active"
+                    android:textColor="@color/white"/>
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

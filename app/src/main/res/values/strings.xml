@@ -1,0 +1,27 @@
+<resources>
+    <!--////////INACTIVE/////-->
+    <string name="functionUnavailable">(Functionality not available yet)</string>
+
+    <!--////////MAIN ACTIVITY TEXTS////////////////-->
+    <string name="app_name">AWCVv4</string>
+    <string name="WelcomeText">Welcome to the</string>
+    <string name="langhead">VIRTUAL GUIDE</string>
+    <string name="langhead2">of IIT MADRAS RESEARCH PARK</string>
+    <string name="askLang">Please select your preferred language</string>
+
+    <!--/////////WELCOME ACTIVITY TEXT///////////-->
+    <string name="availableDestHeading">Available Destinations</string>
+    <string name="userQuesHeading">User\'s Question:</string>
+    <string name="botAnsHeading">Answer:</string>
+    <string name="micInstructions">Please speak out or select your destination</string>
+
+    <!--/////////TTS TEXTS//// Cropping out the urls for security ///////////-->
+    
+    <string name="botWelcome">Welcome to I I T madras research park\'s Virtual guide. Note that we are still working on certain functions and the buttons with blue are the functions now available. Please select the language you prefer</string>
+    <string name="wheelchair1url"></string>
+    <string name="micnprofileapi"></string>
+    <string name="mapUrl"></string>
+    <string name="wheelchairID">1</string>
+
+    <string name="sign_language"></string>
+</resources>

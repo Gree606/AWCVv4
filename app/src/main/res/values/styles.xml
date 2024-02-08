@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_darkcolor</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PageHeading" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#283593</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">8sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="NormalHeading">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="FieldTextStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
